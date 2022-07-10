@@ -14,3 +14,6 @@
    전체<br>
 2. NLP(Natural Language Processing)
    자연어 처리
+3. LSTM(Long short term memory)
+   장기/단기 기억을 가능하게 설계한 신경망 구조. 기존 RNN이 출력과 먼위치에 있는 정보를 기억할 수 없다는 단점 보완
+   ![image](https://user-images.githubusercontent.com/60510718/178132038-2be8f6e2-dde8-43d6-9280-61ea7155370e.png)
