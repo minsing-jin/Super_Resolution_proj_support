@@ -7,6 +7,7 @@
 
 ## 선행지식(prior knowledge)
 ### 1. Attention이란 무엇인가
+#### 어텐션 메커니즘
 
 ### 2. 용어 설명
 1. embedding이란?<br>
@@ -15,5 +16,14 @@
 2. NLP(Natural Language Processing)
    자연어 처리
 3. LSTM(Long short term memory)
-   장기/단기 기억을 가능하게 설계한 신경망 구조. 기존 RNN이 출력과 먼위치에 있는 정보를 기억할 수 없다는 단점 보완
-   ![image](https://user-images.githubusercontent.com/60510718/178132038-2be8f6e2-dde8-43d6-9280-61ea7155370e.png)
+   장기/단기 기억을 가능하게 설계한 신경망 구조. 기존 RNN이 출력과 먼위치에 있는 정보를 기억할 수 없고, 장기간의 패턴을 학습하는데에 제한되는 단점 보완, 자세한 설명은 아래 설명 참조
+Reference: http://www.incodom.kr/LSTM
+
+
+https://wikidocs.net/22893
+https://www.grainpowder.net/posts/dl/nlp/vaswani2017/
+https://gist.github.com/ihoneymon/652be052a0727ad59601
+https://gist.github.com/ihoneymon/652be052a0727ad59601
+https://heung-bae-lee.github.io/2020/01/16/NLP_01/
+https://wikidocs.net/24996
+https://wikidocs.net/22886
