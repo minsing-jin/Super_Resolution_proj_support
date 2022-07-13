@@ -88,3 +88,7 @@ Reference: http://www.incodom.kr/LSTM
 
 
 https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+https://www.grainpowder.net/posts/dl/nlp/vaswani2017/
+https://wikidocs.net/22893
+https://tigris-data-science.tistory.com/entry/%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-Transformer3-Multi-Head-Attention%EA%B3%BC-Encoder
