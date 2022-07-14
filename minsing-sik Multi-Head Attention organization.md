@@ -9,7 +9,7 @@ multi-head self attention은 single-head self attention을 여러개 이용하�
 
 
 
-참고:https://tigris-data-science.tistory.com/entry/%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-Transformer3-Multi-Head-Attention%EA%B3%BC-Encoder
+reference:https://tigris-data-science.tistory.com/entry/%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-Transformer3-Multi-Head-Attention%EA%B3%BC-Encoder
 
 
 
@@ -21,8 +21,18 @@ multi-head self attention은 single-head self attention을 여러개 이용하�
 
 잘 이해가 되지 않는다면 아래 SEQ2SEQ model참고
 ```
+출력 정보 중 어떤 정보가 중요한지 가중치 부여 → h_t 에 곱해서 결과 계산
+입력이나 출력 sequence의 거리에 상관 없이 단어 간 관계를 연결하는 일종의 '의존성' 모델링 가능
+Q: Attention은 어떻게 입력 또는 출력 sequence의 거리에 상관없이 모델링이 가능할까?
+
+A: 기존 RNN과는 달리 각 시점 별 은닉 상태를 모두 이용했기 때문이다. 
+
+ 
+
+「Attention의 경우 시점 별 은닉 상태를 모두 이용해 벡터로 변환하기 때문에 정보의 손실이 없고 무엇보다 '고정 벡터'가 아닌 문장의 길이에 비례한 크기의 벡터를 생성하기 때문에 recurrent 모델에서 나타나는 문제를 해결할 수 있음」
 
 ```
+https://kubig-2021-2.tistory.com/43
 
 
 ### 2. SEQ2SEQ model
@@ -48,6 +58,11 @@ vector라고 불림.
 ```
 링크: https://wikidocs.net/24996
 
+### 3. transformer
+```
+recurrence를 제거하고 Attention에 전적으로 의지해 입력과 출력 간 관계를 인식함으로써 의존성을 반영
+Attention → 한 번의 행렬 곱으로 위치 정보가 포함된 sequence 한 번에 계산 → 병렬 처리 가능!
+```
 #### 어텐션 메커니즘
 ![image](https://user-images.githubusercontent.com/60510718/178749382-4b9bc2d5-b129-4b3f-b182-e7a33bdea464.png)
 ```
@@ -92,3 +107,8 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 https://www.grainpowder.net/posts/dl/nlp/vaswani2017/
 https://wikidocs.net/22893
 https://tigris-data-science.tistory.com/entry/%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-Transformer3-Multi-Head-Attention%EA%B3%BC-Encoder
+
+
+
+야무진 사이트
+https://kubig-2021-2.tistory.com/43
