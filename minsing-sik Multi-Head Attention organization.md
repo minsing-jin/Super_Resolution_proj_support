@@ -11,10 +11,15 @@ multi-head self attention은 single-head self attention을 여러개 이용하�
 
 reference:https://tigris-data-science.tistory.com/entry/%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC-%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94-Transformer3-Multi-Head-Attention%EA%B3%BC-Encoder
 
+### Super resolution에 어떻게 쓰이는가?
+
 
 
 
 이미지 처리 분야에서 attention 활용
+
+# multi head cross attention이란?
+
 
 ## 선행지식(prior knowledge)
 ### 1. Attention이란 무엇인가
